@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jsp:root 
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns="http://www.w3.org/1999/xhtml"
+    version="2.0">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8" />
+    <jsp:output omit-xml-declaration="true" />
+    <jsp:output doctype-root-element="HTML" 
+                doctype-system="about:legacy-compat" /> 
+
+    <section id="pageSection">
+        <form action="products?action=edit" method="post" role="form" id="input">
+            <fieldset>
+                <legend>Product</legend>
+                <ul style="list-style: none;">  <!-- Bad in line style -->
+                    <li><label for="name">Id:</label></li>
+                    <li><input type="text" id="id" name="id" value="${id}" disabled="disabled"/></li>
+                    <li><label for="name">Name:</label></li>
+                    <li><input type="text" id="name" name="name" value="${name}"/></li>
+                    <li><label for="price">Price</label></li>
+                    <li><input type="number" id="price" name="price" min="0" value="${price}" /></li>
+                    <li><a href="shop?view=products" class="btn btn-default">Cancel</a>
+                        <input type="submit" name="submit" value="Save"/>
+                        <input type="hidden" id="hidden" name="hidden" value="${id}"/></li>
+                </ul>
+            </fieldset>
+        </form>        
+    </section>
+</jsp:root>
+
+

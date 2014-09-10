@@ -1,0 +1,4 @@
+<nav class="btn-group btn-group-sm">
+    <a class="btn btn-default" href="products?view=add">New</a>
+    <a class="btn btn-default" href="products?view=search">Search</a>
+</nav>

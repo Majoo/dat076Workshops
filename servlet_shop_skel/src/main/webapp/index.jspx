@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root 
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns="http://www.w3.org/1999/xhtml"
+    version="2.0">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8" />
+    <jsp:output omit-xml-declaration="true" />
+    <jsp:output doctype-root-element="HTML" 
+                doctype-system="about:legacy-compat" />
+    <html>
+        
+        <jsp:include page="WEB-INF/jsp/partials/head.jspx" >
+            <jsp:param name="title" value="JSP Shop" />
+        </jsp:include> 
+        <body>
+            <!-- Static content so use static include (other option is jsp:include) -->
+            <jsp:directive.include file="WEB-INF/jsp/partials/header.jspx" />
+            <jsp:directive.include file="WEB-INF/jsp/partials/mainMenu.jspx"/>
+            <section>
+                <p>This is the entry to other parts of the application</p>
+            </section>
+            <jsp:directive.include file="WEB-INF/jsp/partials/footer.jspx" />
+        </body>
+    </html>
+</jsp:root>
+

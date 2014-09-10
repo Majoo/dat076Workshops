@@ -1,0 +1,6 @@
+<nav class="navbar navbar-default" role="navigation">
+    <a class="navbar-brand" href="index.jspx">Home</a>
+    <a class="navbar-brand" href="shop?view=products">Products</a>
+    <a class="navbar-brand" href="shop?view=customers">Customers</a>
+    <a class="navbar-brand" href="shop?view=orders">Orders</a>
+</nav>

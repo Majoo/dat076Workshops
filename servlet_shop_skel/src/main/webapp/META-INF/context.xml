@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Server may host many application. This path is what identifies each -->
+<Context antiJARLocking="true" path="/servlet_shop"/>
