@@ -77,14 +77,14 @@ public class ProductServlet extends HttpServlet {
                 shop.getProductCatalogue().create(new Product(name1, Double.parseDouble(price1)));
                 
                 response.sendRedirect("shop?view=products");                
-                break;
+                return;
                 
             case "del":
                 Long id2 = Long.parseLong(request.getParameter("id"));
                 shop.getProductCatalogue().delete(id2);
                 
                 response.sendRedirect("shop?view=products"); 
-                break;
+                return;
                            
             case "edit":
                 String name = request.getParameter("name");
@@ -95,7 +95,7 @@ public class ProductServlet extends HttpServlet {
                 shop.getProductCatalogue().update(p);
               
                 response.sendRedirect("shop?view=products");
-                break;  
+                return;  
                        
             default:;
             }
